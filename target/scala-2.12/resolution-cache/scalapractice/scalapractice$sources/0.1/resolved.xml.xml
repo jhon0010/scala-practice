@@ -4,7 +4,7 @@
 		module="scalapractice$sources"
 		revision="0.1"
 		status="integration"
-		publication="20190328081207"
+		publication="20190506113611"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>

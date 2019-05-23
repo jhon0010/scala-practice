@@ -1,6 +1,6 @@
 
   println("Welcome to the jungle baby")
-  val culo = 5 * 5
+  val cal = 5 * 5
   val name = "Jhon"
   name.toUpperCase()
 
