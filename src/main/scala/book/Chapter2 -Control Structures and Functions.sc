@@ -11,7 +11,7 @@ import java.net.MalformedURLException
 val x = 0
 val s = if (x > 0) 1 else -1
 
-if (x > 0) "positive" else -1  // returns any
+if (x > 0) "positive" else -1  // returns any that id like object in java
 if (x > 0) 1 // if the condition does not apply the vale is Unit = () is like void in java
 
 /**
@@ -49,6 +49,7 @@ while (n > 0) {
 
 /**
   * Scala has no break or continue statements to break out of a loop
+  * *****  The <- symbol means that the variable i can traverse all the values of a collection.*******
   */
 for (i <- 1 to 10)
   print(r * i)
@@ -70,6 +71,10 @@ for (i <- 1 to 3; j <- 1 to 3 if i != j) print(f"${10 * i + j}%3d")
 
 for (i <- 1 to 10) yield i % 3
 
+/**
+  * This kind of for that have a yield in the end are call
+  *   for comprehension
+  */
 case class Person(name: String, age: Int)
 val persons = Seq(Person("jhon",28), Person("Pedro", 3))
 for(p <- persons) yield if (p.name.contains("j")) {p}
@@ -199,3 +204,19 @@ for(ch <- "Hello") {
 println(sum)
 
 "Hello".foldLeft(1l)(_ * _.toInt)
+
+
+
+/**
+  * Default value arguments
+  * @param num1
+  * @param num2
+  * @return
+  */
+def sum(num1:Int , num2: Int = 3) = {
+  num1 + num2
+}
+
+sum(1)
+
+
